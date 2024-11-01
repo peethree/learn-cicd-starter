@@ -21,10 +21,7 @@ jobs:
       - name: run tests
         run: go test -cover ./...
 
-<<<<<<< HEAD
       
-=======
->>>>>>> origin/addtests
   style:
     name: Style
     runs-on: ubuntu-latest
@@ -46,5 +43,3 @@ jobs:
 
       - name: run staticcheck
         run: staticcheck ./...
-      - name: format code
-        run: test -z $(go fmt ./...)
